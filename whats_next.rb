@@ -1,6 +1,8 @@
-## Binary example
+# Binary example
+# Problem Statement
+# https://www.hackerrank.com/rest/contests/master/challenges/whats-next/download_pdf?language=English
 
-## In Progress
+# In Progress
 
 def int_to_binary(n)
     quot = n
