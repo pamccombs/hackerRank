@@ -39,11 +39,12 @@
 # set_count(10010110000)
 
 def set_expand(set)
-    set_count = set.count
-    new_array = []
+    my_set = set
+    my_set_count = my_set.count
+    @new_array = []
     bin_num = [1]
 
-    until set_count == bin_num.count
+    until my_set_count == bin_num.count
         if (bin_num.last == 1)
         bin_num << 0
         else (bin_num.last == 0)
@@ -51,16 +52,19 @@ def set_expand(set)
         end
     end
 
-    set.each do |int|
-       int.times do 
-        next if new_array.last == 1
-        new_array << 1
-        # next if new_array.last == 0 
-        # new_array << 0
-       end
+   
+
+    my_set.each_with_index do |int, i|
+        if i.even?
+        int.times {@new_array << 1}
+        else
+        int.times {@new_array << 0}
+        end
     end
-    puts new_array.count
-    print new_array
+
+
+    puts @new_array.count
+    print @new_array
     puts ""
 end
 set_expand([4, 1, 3, 2, 4])
