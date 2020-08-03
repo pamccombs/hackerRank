@@ -31,3 +31,9 @@ def binary_to_int(b)
     
 end
 binary_to_int(10010110000)
+
+def set_count(binary_int)
+    set_count = 0
+    puts set_count = binary_int.digits.count(1)
+end
+set_count(10010110000)
