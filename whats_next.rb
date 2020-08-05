@@ -68,7 +68,7 @@ def set_expand(set)
     puts ""
 
     puts @new_array.join().to_i
-
+    #test
     
 end
 set_expand([4, 1, 3, 2, 4])
