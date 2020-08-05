@@ -66,5 +66,9 @@ def set_expand(set)
     puts @new_array.count
     print @new_array
     puts ""
+
+    puts @new_array.join().to_i
+
+    
 end
 set_expand([4, 1, 3, 2, 4])
