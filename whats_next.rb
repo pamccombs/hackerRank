@@ -40,20 +40,8 @@
 
 def set_expand(set)
     my_set = set
-    my_set_count = my_set.count
     @new_array = []
-    bin_num = [1]
-
-    until my_set_count == bin_num.count
-        if (bin_num.last == 1)
-        bin_num << 0
-        else (bin_num.last == 0)
-        bin_num << 1
-        end
-    end
-
    
-
     my_set.each_with_index do |int, i|
         if i.even?
         int.times {@new_array << 1}
