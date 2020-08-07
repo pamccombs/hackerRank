@@ -1,5 +1,5 @@
 # Problem Statement
-# https://www.hackerrank.com/rest/contests/master/challenges/30-hello-world/download_pdf?language=English
+# https://www.hackerrank.com/rest/contests/master/challenges/30-data-types/download_pdf?language=English
 
 # input is unknown
 
