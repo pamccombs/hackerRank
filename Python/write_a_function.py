@@ -1,3 +1,10 @@
+# Problem Statement
+
+# https://www.hackerrank.com/rest/contests/master/challenges/write-a-function/download_pdf?language=English
+
+## Completed
+
+## Notes
 
 # In the Gregorian calendar, three conditions are used to identify leap years:
 
@@ -5,6 +12,7 @@
 # The year can be evenly divided by 100, it is NOT a leap year, unless:
 # The year is also evenly divisible by 400. Then it is a leap year.
 
+## Solution
 
 def is_leap(year):
     leap = True
