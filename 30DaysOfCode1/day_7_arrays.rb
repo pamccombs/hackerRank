@@ -4,12 +4,12 @@
 
 ## Completed
 
+## Test values
+arr = [4, 5, 6, 4]
+
+## Actual Solution
+
 # n = gets.to_i
-
-n = [4564], [9873]
-
 # arr = gets.rstrip.split(' ').map(&:to_i)
 
-# puts arr.join(' ').reverse
-
-puts n
+print arr.reverse.join(' ')
