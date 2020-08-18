@@ -1,3 +1,10 @@
+# Problem Statement
+
+# https://www.hackerrank.com/rest/contests/master/challenges/30-dictionaries-and-maps/download_pdf?language=English
+
+## Completed
+
+
 ## Test values
 n = 3
 data = [['sam', '99912222'], ['tom', '11122222'], ['harry', '12299933']]
