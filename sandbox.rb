@@ -1,24 +1,56 @@
-arr1 = [1, 2, 3, 8]
-arr2 = [4, 5, 6]
 
-# arr1.zip(arr2).each do |i, j|
-    
-#     break if j == nil
-    
-#     puts i + j
-    
-# end
-# for i, j in arr1.zip(arr2) do
-    
-#     break if j === nil
-    
-#     puts i + j
-    
-# end
 
-a = 1
-b = '1'
+@arr = [
+    [1, 1, 1, 0, 0, 0],
+    [0, 1, 0, 0, 0, 0],
+    [1, 1, 1, 0, 0, 0],
+    [0, 0, 2, 4, 4, 0],
+    [0, 0, 0, 2, 0, 0],
+    [0, 0, 1, 2, 4, 0]
+]
 
-puts a == b.to_i
-puts a === b.to_i
-puts a.equal?(b.to_i)
+@sums = []
+x = 0
+y = 0
+
+def hourglass(y,x)
+    nums = []
+    
+    nums << ( @arr[y][x] + @arr[y][x+1] + @arr[y][x+2] )
+    nums << @arr[y+1][x+1]
+    nums << (@arr[y+2][x] + @arr[y+2][x+1] + @arr[y+2][x+2])
+
+    @sums << nums.sum
+
+    # print [@arr[y][x], @arr[y][x+1], @arr[y][x+2]]
+    # print "\n"
+    # print [@arr[y+1][x+1]]
+    # print "\n"
+    # print [@arr[y+2][x], @arr[y+2][x+1], @arr[y+2][x+2]]
+    # print "\n"
+
+
+end
+
+def left_to_right(y,x)
+    counter = 0
+    4.times do 
+        hourglass(y,x + counter)
+        counter += 1
+    end
+end
+
+def whole(y,x)
+    counter = 0
+    4.times do
+        left_to_right(y + counter,x)
+        counter += 1
+    end
+    print @sums.max
+end
+
+
+# left_to_right(y,x)
+whole(y,x)
+# hourglass(y,x)
+
